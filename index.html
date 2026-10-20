@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Myntra - Fashion Store</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="navbar">
+  <a class="logo" href="#">M<span>Y</span>NTRA</a>
+
+  <nav class="categories">
+    <a href="#men">MEN</a>
+    <a href="#women">WOMEN</a>
+    <a href="#kids">KIDS</a>
+    <a href="#beauty">BEAUTY</a>
+    <a href="#home">HOME</a>
+  </nav>
+
+  <div class="search-box">
+    <span>⌕</span>
+    <input id="searchInput" type="text"
+      placeholder="Search for products, brands and more">
+  </div>
+
+  <div class="nav-actions">
+    <div class="nav-item"><span>♙</span><small>Profile</small></div>
+    <div class="nav-item"><span>♡</span><small>Wishlist</small></div>
+    <div class="nav-item bag" id="bagButton">
+      <span>♧<b id="cartCount">0</b></span>
+      <small>Bag</small>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <p class="eyebrow">THE NEW SEASON IS HERE</p>
+    <h1>STYLE THAT<br>MAKES YOU</h1>
+    <h2>STAND OUT.</h2>
+    <p>Discover your next favourite look.</p>
+    <a href="#products" class="shop-btn">SHOP NOW →</a>
+  </div>
+  <div class="hero-image">
+    <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1100&q=85"
+      alt="Fashion collection">
+  </div>
+</section>
+
+<section class="brands">
+  <span>H&M</span>
+  <span>ROADSTER</span>
+  <span>HRX</span>
+  <span>NIKE</span>
+  <span>ADIDAS</span>
+  <span>ONLY</span>
+</section>
+
+<main>
+  <section class="section" id="products">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">CURATED FOR YOU</p>
+        <h2>DEAL OF THE DAY</h2>
+      </div>
+      <span class="result-count" id="resultCount"></span>
+    </div>
+
+    <div class="filter-row">
+      <button class="filter active" data-category="All">All</button>
+      <button class="filter" data-category="Men">Men</button>
+      <button class="filter" data-category="Women">Women</button>
+      <button class="filter" data-category="Shoes">Shoes</button>
+      <button class="filter" data-category="Accessories">Accessories</button>
+    </div>
+
+    <div class="product-grid" id="productGrid"></div>
+    <p id="emptyMessage" class="empty-message" hidden>
+      No products found. Try another search.
+    </p>
+  </section>
+
+  <section class="promo">
+    <div>
+      <p>YOUR STYLE, YOUR RULES</p>
+      <h2>Refresh Your Wardrobe</h2>
+      <span>Find looks you'll love, every day.</span>
+    </div>
+    <a href="#products" class="shop-btn">EXPLORE NOW →</a>
+  </section>
+
+  <section class="section categories-section">
+    <p class="eyebrow">EXPLORE MORE</p>
+    <h2>SHOP BY CATEGORY</h2>
+    <div class="category-grid">
+      <a href="#products" class="category-card" data-jump="Men">
+        <img src="https://images.unsplash.com/photo-1516257984-b1b4d707412e?auto=format&fit=crop&w=500&q=80" alt="Men's fashion">
+        <span>MEN'S FASHION</span>
+      </a>
+      <a href="#products" class="category-card" data-jump="Women">
+        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=500&q=80" alt="Women's fashion">
+        <span>WOMEN'S FASHION</span>
+      </a>
+      <a href="#products" class="category-card" data-jump="Shoes">
+        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=500&q=80" alt="Shoes">
+        <span>SHOES</span>
+      </a>
+      <a href="#products" class="category-card" data-jump="Accessories">
+        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=500&q=80" alt="Accessories">
+        <span>ACCESSORIES</span>
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <a class="logo" href="#">M<span>Y</span>NTRA</a>
+  <p>Fashion is what you buy. Style is what you do with it.</p>
+  <p class="copyright">© 2026 Fashion Store Demo. Unofficial Myntra-inspired project.</p>
+</footer>
+
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
